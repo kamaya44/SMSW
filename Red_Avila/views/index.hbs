@@ -1,0 +1,58 @@
+<!--Login -->
+<div data-role="page" id="login">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Red Avila</h1>
+  </div>
+  <div role="main" class="ui-content" >
+
+    <form class="form" id="loginForm" data-position="fixed">
+      <label for="log-txtCorreo">Correo electronico</label>
+      <input type="email" id="txtEmail" name="txtCorreo" value="" placeholder="Ingrese Correo de Usuario">
+      <label for="usuario-txtPass">Contraseña</label>
+      <input type="password" id="txtPassword" name="txtPass" value="" placeholder="Ingrese Contraseña">
+      <button type="button" id="btnIniciarSesion" >Iniciar Sesión</button>
+      <label class="center-label">Si no tienes cuenta registrate llenando el formulario</label>
+      <a href="#Registrar"><button type="button" >Registrate</button></a>
+    </form>
+
+  </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+      <li>
+        <a href="#login" >Inicio</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Registrar -->
+<div data-role="page" id="Registrar">
+  <div data-role="header" data-position="fixed" data-theme="b">
+    <h1>Red Avila</h1>
+  </div>
+
+  <div role="main" class="ui-content" >
+    <form name="Registrar" class="form" id="registerForm" data-position="fixed">
+      <label for="registerf-txtCorreo">Ingrese su Nombre Completo</label>
+      <input type="email" id="NombreCompleto" name="NombreCompleto" value="" placeholder="Ingrese su nombre Completo" required="true" data-required-msg="El nombre de usuario es requerido">
+      <label for="registerf-txtCorreo">Ingrese su Correo Electronico</label>
+      <input type="email" id="Email" name="Email" value="" placeholder="Ingrese Correo de su Usuario" required="true" data-required-msg="El correo electrónico es requerido">
+      <label for="usuario-txtPass">Contraseña</label>
+      <input type="password" id="Password" name="Password" value="" placeholder="Ingrese su Contraseña" required="true" data-required-msg="La contraseña es requerida">
+      <label for="usuario-txtPass">Confirmar Contraseña</label>
+      <input type="password" id="usuario-txtPassConf" name="txtPassConf" value="" placeholder="Confirme Contraseña" >
+      <button type="button" id="btnRegistrarUsuario">Registrate</button>
+    </form>
+    </div>
+  <div data-role="footer" data-theme="b" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+      <li>
+        <a href="#login" >Inicio</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</div>
